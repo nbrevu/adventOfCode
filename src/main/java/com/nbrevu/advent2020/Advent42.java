@@ -35,9 +35,9 @@ public class Advent42 {
 		}
 	}
 	
-	private static final Pattern CM_PATTERN=Pattern.compile("^(\\d\\d\\d)cm$");
-	private static final Pattern IN_PATTERN=Pattern.compile("^(\\d\\d)in$");
-	private static final Predicate<String> HEIGHT_PREDICATE=new Predicate<>()	{
+	private final static Pattern CM_PATTERN=Pattern.compile("^(\\d\\d\\d)cm$");
+	private final static Pattern IN_PATTERN=Pattern.compile("^(\\d\\d)in$");
+	private final static Predicate<String> HEIGHT_PREDICATE=new Predicate<>()	{
 		@Override
 		public boolean test(String t) {
 			Matcher cmMatcher=CM_PATTERN.matcher(t);
@@ -54,11 +54,11 @@ public class Advent42 {
 		}
 	};
 
-	private static final Predicate<String> HAIR_COLOUR_PREDICATE=Pattern.compile("^#[0-9a-f]{6}$").asMatchPredicate();
-	private static final Predicate<String> EYE_COLOUR_PREDICATE=ImmutableSet.of("amb","blu","brn","gry","grn","hzl","oth")::contains;
-	private static final Predicate<String> PASSPORT_ID_PREDICATE=Pattern.compile("^[0-9]{9}$").asMatchPredicate();
+	private final static Predicate<String> HAIR_COLOUR_PREDICATE=Pattern.compile("^#[0-9a-f]{6}$").asMatchPredicate();
+	private final static Predicate<String> EYE_COLOUR_PREDICATE=ImmutableSet.of("amb","blu","brn","gry","grn","hzl","oth")::contains;
+	private final static Predicate<String> PASSPORT_ID_PREDICATE=Pattern.compile("^[0-9]{9}$").asMatchPredicate();
 	
-	private static final Map<String,Predicate<String>> PREDICATES=createPredicatesMap();
+	private final static Map<String,Predicate<String>> PREDICATES=createPredicatesMap();
 	
 	private static Map<String,Predicate<String>> createPredicatesMap()	{
 		Map<String,Predicate<String>> result=new HashMap<>();
