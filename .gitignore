@@ -14,3 +14,13 @@ buildNumber.properties
 /.settings/org.eclipse.core.resources.prefs
 /.settings/org.eclipse.jdt.core.prefs
 /.settings/org.eclipse.m2e.core.prefs
+/2015/.classpath
+/2015/.project
+/2015/.settings/org.eclipse.core.resources.prefs
+/2015/.settings/org.eclipse.jdt.core.prefs
+/2015/.settings/org.eclipse.m2e.core.prefs
+/2020/.classpath
+/2020/.project
+/2020/.settings/org.eclipse.core.resources.prefs
+/2020/.settings/org.eclipse.jdt.core.prefs
+/2020/.settings/org.eclipse.m2e.core.prefs
