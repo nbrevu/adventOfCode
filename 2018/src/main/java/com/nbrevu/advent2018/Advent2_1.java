@@ -34,5 +34,4 @@ public class Advent2_1 {
 		int result=count2*count3;
 		System.out.println(result);
 	}
-
 }

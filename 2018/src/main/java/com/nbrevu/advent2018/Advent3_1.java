@@ -40,5 +40,4 @@ public class Advent3_1 {
 		}
 		System.out.println(fabric.countMultipleClaims());
 	}
-
 }

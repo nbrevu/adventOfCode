@@ -16,5 +16,4 @@ public class Advent1_1 {
 		int result=lines.stream().mapToInt(Integer::parseInt).sum();
 		System.out.println(result);
 	}
-
 }

@@ -57,5 +57,4 @@ public class Advent3_2 {
 		boolean[] overlaps=findOverlaps(claims);
 		for (int i=0;i<overlaps.length;++i) if (!overlaps[i]) System.out.println(claims.get(i).id);
 	}
-
 }

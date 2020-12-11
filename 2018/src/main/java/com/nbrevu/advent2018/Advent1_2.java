@@ -26,5 +26,4 @@ public class Advent1_2 {
 			}	else partialSums.add(sum);
 		}
 	}
-
 }

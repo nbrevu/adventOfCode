@@ -122,5 +122,4 @@ public class Advent4_2 {
 		int result=bestResult.g.id*bestResult.minute;
 		System.out.println(result);
 	}
-
 }

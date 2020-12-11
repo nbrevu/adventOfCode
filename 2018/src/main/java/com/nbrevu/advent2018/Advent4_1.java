@@ -120,5 +120,4 @@ public class Advent4_1 {
 		int result=bestGuard.id*bestGuard.getHighestMinute();
 		System.out.println(result);
 	}
-
 }

@@ -31,5 +31,4 @@ public class Advent2_2 {
 			}
 		}
 	}
-
 }
