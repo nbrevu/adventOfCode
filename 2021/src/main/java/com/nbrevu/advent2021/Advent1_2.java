@@ -11,6 +11,7 @@ public class Advent1_2 {
 	private final static String IN_FILE="Advent1.txt";
 	
 	public static void main(String[] args) throws IOException	{
+		long tic=System.nanoTime();
 		URL file=Resources.getResource(IN_FILE);
 		LongStream.Builder builder=LongStream.builder();
 		for (String line:Resources.readLines(file,Charsets.UTF_8))	{
@@ -23,6 +24,9 @@ public class Advent1_2 {
 		long[] allValues=builder.build().toArray();
 		int counter=0;
 		for (int i=3;i<allValues.length;++i) if (allValues[i]>allValues[i-3]) ++counter;
+		long tac=System.nanoTime();
+		double seconds=1e-9*(tac-tic);
 		System.out.println(counter);
+		System.out.println("Elapsed "+seconds+" seconds.");
 	}
 }

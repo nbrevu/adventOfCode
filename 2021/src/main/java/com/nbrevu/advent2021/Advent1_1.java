@@ -11,6 +11,7 @@ public class Advent1_1 {
 	private final static String IN_FILE="Advent1.txt";
 	
 	public static void main(String[] args) throws IOException	{
+		long tic=System.nanoTime();
 		OptionalLong lastNumber=OptionalLong.empty();
 		URL file=Resources.getResource(IN_FILE);
 		int counter=0;
@@ -26,6 +27,9 @@ public class Advent1_1 {
 				System.out.println("Lo que me habéis dao pa papear me roe las tripas.");
 			}
 		}
+		long tac=System.nanoTime();
+		double seconds=1e-9*(tac-tic);
 		System.out.println(counter);
+		System.out.println("Elapsed "+seconds+" seconds.");
 	}
 }

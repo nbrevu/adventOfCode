@@ -62,6 +62,7 @@ public class Advent2_2 {
 	}
 	
 	public static void main(String[] args) throws IOException	{
+		long tic=System.nanoTime();
 		Position p=new Position(0,0,0);
 		URL file=Resources.getResource(IN_FILE);
 		for (String line:Resources.readLines(file,Charsets.UTF_8))	{
@@ -71,6 +72,9 @@ public class Advent2_2 {
 			long amount=Long.parseLong(m.group(2));
 			p=dir.move(p,amount);
 		}
+		long tac=System.nanoTime();
+		double seconds=1e-9*(tac-tic);
 		System.out.println(p.horizPos*p.depth);
+		System.out.println("Elapsed "+seconds+" seconds.");
 	}
 }
